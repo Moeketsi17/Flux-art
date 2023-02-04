@@ -10,54 +10,90 @@
 
 nav {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #000;
-    padding: 0 25px;
+    padding: 0 5%;
+    height: 40px;
+    z-index: 1000;
+    
+}
+
+nav.active {
+    border-bottom: 1px solid #fff;
+    background-color: #000;
 }
 
 .logo {
     position: relative;
-    background-color: aquamarine;
     border-right: 1px solid #000;
-    width: 150px;
+    width: 100px;
+    height: 40px;
+    mix-blend-mode: difference;
+}
+
+
+
+.logo.active {
+    border-right: 1px solid #fff;
+}
+.logo.active h6,
+.logo.active .logo-span {
+    color: #fff;
 }
 
 .logo h6 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 800;
+    mix-blend-mode: difference;
 }
 
 .logo-span {
     position: absolute;
-    left: 100px;
-    top: 28px;
+    left: 50px;
+    top: 11px;
     transform: rotate(-90deg);
     font-weight: 600;
+    font-size: 10px;
+    mix-blend-mode: difference;
 }
 
 .navlinks {
     width: 100%;
     height: 100vh;
+    display: flex;
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.35s ease-in-out;
+}
+
+.navlinks.open {
+    transform: translateY(0);
+    
 }
 
 .navlinks ul {
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: #000;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    position: absolute;
+    padding: 200px 0;
     top: 0;
     left: 0;
-    
 }
 
 .navlinks ul li {
     list-style: none;
+    height: 25px;
 }
 
 .navlinks a {
@@ -67,16 +103,126 @@ nav {
 }
 
 
-
-
-/* tablet screen */
-@media screen and (min-width: 768px) {
+/* codepen burger */
+.burger-container {
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    /* width: 100vw;
+    height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
+.burger {
+    --burger-height: 20px;
+    --stick-width: 30px;
+    --stick-height: 2px;
+    --stick-color: #000;
+    --transition-duration: 0.2s;
+    
+    position: relative;
+    width: var(--stick-width);
+    height: var(--burger-height);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.stick {
+    mix-blend-mode: difference;
+    position: absolute;
+    height: var(--stick-height);
+    width: var(--stick-width);
+    background-color: var(--stick-color);
+    border-radius: 2px;
+    transition: transform ease-in-out, width ease-in-out;
+    transition-duration: var(--transition-duration);
+}
+
+.stick:nth-child(1) {
+    top: 0;
+}
+
+.stick:nth-child(2),
+.stick:nth-child(3),
+.stick:nth-child(4) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.stick:nth-child(5) {
+    bottom: 0;
+}
+
+.burger.active .stick:nth-child(even) {
+    transition-delay: var(--transition-duration);
+    background-color: #fff;
+}
+
+.burger:not(.active) .stick:nth-child(odd) {
+    transition-delay: var(--transition-duration);
+}
+
+.burger.active .stick:nth-child(odd) {
+    width: 0;
+}
+
+.burger.active .stick:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.burger.active .stick:nth-child(4) {
+    transform: rotate(-45deg);
+}
+
+/* header section */
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* arteorks section */
+.art-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.artwork {
+    background-color: lightseagreen;
+    height: 500px;
+    border-top: 1px solid #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.artwork-img {
+    background-color: lightskyblue;
+    height: 300px;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/* tablet screen */
+/* @media screen and (min-width: 768px) {
+    
+} */
+
 
 /* laptop screen */
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
     nav {
         display: flex;
         width: 100%;
@@ -123,4 +269,4 @@ nav {
         font-size: 14px;
     }
     
-}
+} */
