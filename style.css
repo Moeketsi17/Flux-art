@@ -374,6 +374,7 @@ footer {
 
 .size-container {
     width: 270px;
+
 }
 
 .footer-logo {
@@ -385,8 +386,8 @@ footer span {
     position: absolute;
     font-size: 40px;
     transform: rotate(-90deg);
-    top: 58px;
-    left: 268px;
+    top: 56px;
+    left: 292px;
 }
 
 .slogan-container {
@@ -469,6 +470,7 @@ footer span {
 .copyright-container {
     display: grid;
     place-items: center;
+    width: 100%;
     border-top: 0.3px solid rgba(255, 255, 255, 0.7);
 
 }
@@ -476,6 +478,7 @@ footer span {
 .copyright-container p {
     padding: 15px 0;
     font-size: 14px;
+    text-align: center;
     color: rgba(255, 255, 255, 0.7);
 }
 
