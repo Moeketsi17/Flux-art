@@ -18,9 +18,9 @@ nav {
     align-items: center;
     border-bottom: 1px solid #000;
     padding: 0 5%;
-    height: 40px;
+    height: 50px;
     z-index: 1000;
-    
+    background-color: #fff;
 }
 
 nav.active {
@@ -32,8 +32,8 @@ nav.active {
     position: relative;
     border-right: 1px solid #000;
     width: 100px;
-    height: 40px;
-    mix-blend-mode: difference;
+    height: 50px;
+    /* mix-blend-mode: difference; */
 }
 
 
@@ -47,19 +47,19 @@ nav.active {
 }
 
 .logo h6 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 800;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
 }
 
 .logo-span {
     position: absolute;
-    left: 50px;
-    top: 11px;
+    left: 60px;
+    top: 14px;
     transform: rotate(-90deg);
-    font-weight: 600;
-    font-size: 10px;
-    mix-blend-mode: difference;
+    font-weight: 400;
+    font-size: 13px;
+    /* mix-blend-mode: difference; */
 }
 
 .navlinks {
@@ -117,8 +117,8 @@ nav.active {
 }
 
 .burger {
-    --burger-height: 20px;
-    --stick-width: 30px;
+    --burger-height: 25px;
+    --stick-width: 35px;
     --stick-height: 2px;
     --stick-color: #000;
     --transition-duration: 0.2s;
@@ -131,7 +131,7 @@ nav.active {
 }
 
 .stick {
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     position: absolute;
     height: var(--stick-height);
     width: var(--stick-width);
@@ -187,13 +187,18 @@ header {
 
 
 /* arteorks section */
+.section-title {
+    font-size: 30px;
+    letter-spacing: -1px;
+    padding: 20px 5% 30px;
+}
 .art-container {
     display: flex;
     flex-direction: column;
 }
 
 .artwork {
-    height: 500px;
+    height: 450px;
     border-top: 1px solid #000;
     padding: 20px;
     display: flex;
@@ -208,7 +213,51 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+
+.img1 {
     background-image: url(/images/2.jpg);
+}
+.img2 {
+    background-image: url(/images/6.jpg);
+}
+.img3 {
+    background-image: url(/images/9.png);
+}
+.img4 {
+    background-image: url(/images/13.jpg);
+}
+.img5 {
+    background-image: url(/images/8.jpg);
+}
+.img6 {
+    background-image: url(/images/11.jpg);
+}
+.img7 {
+    background-image: url(/images/12.jpg);
+}
+.img8 {
+    background-image: url(/images/10.jpg);
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #000;
+    padding: 25px 5% 40px;
+}
+
+.cta-btn {
+    border: 1px solid #000;
+    height: 35px;
+    width: 150px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
 }
 
 
