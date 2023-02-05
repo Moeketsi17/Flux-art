@@ -72,6 +72,7 @@ nav.active {
     left: 0;
     transform: translateY(-100%);
     transition: transform 0.35s ease-in-out;
+    z-index: 900;
 }
 
 .navlinks.open {
@@ -253,7 +254,7 @@ header {
 .cta-btn {
     border: 1px solid #000;
     height: 35px;
-    width: 100px;
+    width: 120px;
     display: grid;
     place-items: center;
     font-size: 14px;
@@ -276,6 +277,10 @@ header {
     overflow-y: hidden;
     margin: 0 5%;
     gap: 20px;
+}
+
+.editorial-container::-webkit-scrollbar {
+    display: none;
 }
 
 .article {
@@ -308,7 +313,7 @@ header {
 .editorial-btn {
     border: 1px solid #fff;
     height: 35px;
-    width: 100px;
+    width: 120px;
     display: grid;
     place-items: center;
     font-size: 14px;
@@ -318,6 +323,161 @@ header {
 
 
 
+/* exhibitions-section */
+.exhibitions-section {
+    padding: 50px 5%;
+}
+
+.exhibition-img-container {
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+}
+
+.exhibition-btns {
+    height: 60px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    padding: 10px 0 20px;
+}
+
+.ex-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+/* footer section */
+footer {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.size-container {
+    width: 270px;
+}
+
+.footer-logo {
+    font-size: 100px;
+    letter-spacing: -2px;
+}
+
+footer span {
+    position: absolute;
+    font-size: 40px;
+    transform: rotate(-90deg);
+    top: 58px;
+    left: 268px;
+}
+
+.slogan-container {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.7);
+}
+
+.slogan {
+    padding: 10px 5%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    width: 130px;
+}
+
+.footer-navlinks {
+    width: 100%;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.7);
+    padding: 0 5% ;
+}
+
+.footer-navlinks li {
+    list-style: none;
+    border-bottom: 0.3px solid rgba(255, 255, 255, 0.7);
+
+}
+
+.footer-navlinks li:last-child {
+    border-bottom: none;
+}
+
+.footer-navlinks a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    line-height: 2;
+}
+
+.newsletter-container {
+    width: 100%;
+    padding: 40px 5%;
+    display: grid;
+    place-items: center;
+}
+
+.news-heading {
+    font-size: 40px;
+}
+
+.email-container {
+    display: flex;
+    width: 100%;
+    /* outline: none; */
+    padding-top: 20px;
+}
+
+.email-container input {
+    width: 70%;
+    height: 50px;
+    background-color: #000;
+    border-top: 1px  solid #fff;
+    border-bottom: 1px  solid #fff;
+    border-left: 1px  solid #fff;
+    border: 1px  solid #fff;
+    color: #fff;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.email-container button {
+    width: 30%;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+    font-weight: 300;
+}
+
+.copyright-container {
+    display: grid;
+    place-items: center;
+    border-top: 0.3px solid rgba(255, 255, 255, 0.7);
+
+}
+
+.copyright-container p {
+    padding: 15px 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
 
 
 /* tablet screen */
