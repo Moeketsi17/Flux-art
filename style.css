@@ -186,11 +186,12 @@ header {
 
 
 
-/* arteorks section */
+/* artworks section */
 .section-title {
     font-size: 30px;
     letter-spacing: -1px;
     padding: 20px 5% 30px;
+    mix-blend-mode: difference;
 }
 .art-container {
     display: flex;
@@ -252,13 +253,69 @@ header {
 .cta-btn {
     border: 1px solid #000;
     height: 35px;
-    width: 150px;
+    width: 100px;
     display: grid;
     place-items: center;
     font-size: 14px;
     color: #000;
     text-decoration: none;
 }
+
+
+/* editorial section */
+.editorial-section {
+    background-color: #000;
+}
+
+.editorial {
+    color: #fff;
+}
+
+.editorial-container {
+    display: flex;
+    overflow-y: hidden;
+    margin: 0 5%;
+    gap: 20px;
+}
+
+.article {
+    width: 250px;
+    height: 320px;
+    text-decoration: none;
+}
+
+.editorail-img {
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 200;
+}
+
+.article-name {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1;
+    width: 150px;
+}
+
+.editorial-btn {
+    border: 1px solid #fff;
+    height: 35px;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
 
 
 
