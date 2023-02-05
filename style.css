@@ -332,12 +332,72 @@ header {
     width: 100%;
     height: 300px;
     background-color: #000;
+    position: relative;
 }
+
+.slider{
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+    background-color: blueviolet;
+}
+
+.transition {
+    transition:.5s linear;
+}
+.slide{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide_1{
+    background-image: url(/images/exhibition1.jpg);
+}
+.slide_2{
+    background-image: url(/images/exhibition2.jpg);
+}
+.slide_3{
+    background-image: url(/images/exhibition1.jpg);
+}
+.slide_4{
+    background-image: url(/images/exhibition2.jpg);
+}
+
 
 .exhibition-btns {
     height: 60px;
     width: 100%;
-    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 0 ;
+}
+
+.prev{
+    cursor:pointer;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000;
+    display: grid;
+    place-items: center;
+}
+
+.next{
+    cursor:pointer;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000;
+    display: grid;
+    place-items: center;
 }
 
 .title {
