@@ -54,11 +54,11 @@ nav.active {
 
 .logo-span {
     position: absolute;
-    left: 60px;
+    left: 70px;
     top: 14px;
     transform: rotate(-90deg);
     font-weight: 400;
-    font-size: 13px;
+    font-size: 12px;
     /* mix-blend-mode: difference; */
 }
 
@@ -294,6 +294,13 @@ header {
     width: 250px;
     height: 250px;
     margin-bottom: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.editorail-img1 {
+    background-image: url(/images/nelson.jpg);
 }
 
 .date {
