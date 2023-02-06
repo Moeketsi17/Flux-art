@@ -396,8 +396,10 @@ header {
     height: 40px;
     width: 40px;
     border: 1px solid #000;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .next{
@@ -405,9 +407,21 @@ header {
     height: 40px;
     width: 40px;
     border: 1px solid #000;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+
+.prev svg,
+.next svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 .title {
     font-size: 50px;
