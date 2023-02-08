@@ -568,58 +568,14 @@ footer span {
 }
 
 
-/* tablet screen */
-/* @media screen and (min-width: 768px) {
-    
-} */
 
 
-/* laptop screen */
-/* @media screen and (min-width: 1024px) {
-    nav {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #000;
-        padding: 0 25px;
-    }
-    
-    .logo {
-        position: relative;
-        background-color: aquamarine;
-        border-right: 1px solid #000;
-        width: 150px;
-    }
-    
-    .logo h6 {
-        font-size: 50px;
-        font-weight: 800;
-    }
-    
-    .logo-span {
-        position: absolute;
-        left: 100px;
-        top: 28px;
-        transform: rotate(-90deg);
-        font-weight: 600;
-    }
-    
-    .navlinks ul {
-        display: flex;
-        width: 500px;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .navlinks ul li {
-        list-style: none;
-    }
-    
-    .navlinks a {
-        text-decoration: none;
-        color: #000;
-        font-size: 14px;
-    }
-    
-} */
+
+
+
+
+
+
+
+
+
