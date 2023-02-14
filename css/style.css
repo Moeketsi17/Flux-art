@@ -576,7 +576,36 @@ footer span {
 
 
 /* contact page */
+.contact-bg {
+    background-color: #000;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 5%;
+}
 
+.contact-info {
+    background-color: aqua;
+    width: 100%;
+}
+
+.contact-form form{
+    /* padding: 40px ; */
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    outline: none;
+    background-color: #000;
+    height: 70px;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1.5px solid #fff;
+}
 
 
 
