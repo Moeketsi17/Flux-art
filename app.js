@@ -13,4 +13,7 @@ button.addEventListener("click", () => {
 
 });
 
-// exhibition slider
+// navbar scroll
+window.addEventListener("scroll", () => {
+    nav.classList.toggle("sticky", window.screenY > 10);
+})

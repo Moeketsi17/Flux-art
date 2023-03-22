@@ -187,6 +187,27 @@ header {
     height: 100vh;
 }
 
+.home_header {
+    background-image: url(/images/dim-hou-oHgMZCwPiNM-unsplash.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+.header__text-continer {
+    padding: 0 10%;
+    height: 100%;
+    width: 100%;
+    background-color: #00000065;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.header__text-continer h1 {
+    text-align: center;
+}
 
 
 /* artworks section */
@@ -586,7 +607,6 @@ footer span {
 }
 
 .contact-info {
-    background-color: aqua;
     width: 100%;
 }
 
@@ -606,6 +626,88 @@ form input {
     border: none;
     border-bottom: 1.5px solid #fff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* article pages */
+.article__header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20vh 5% 10vh;
+    height: 70vh;
+}
+
+.article__heading {
+    text-align: center;
+}
+
+.article__picture-container {
+    width: 100%;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+.article__text-container {
+    width: 100%;
+    padding: 40px 5%;
+    /* background-color: lightblue; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
