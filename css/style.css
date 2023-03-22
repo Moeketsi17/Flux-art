@@ -455,11 +455,9 @@ header {
     background-image: url(/images/exhibition2.jpg);
 }
 .slide_3{
-    background-image: url(/images/exhibition1.jpg);
+    background-image: url(/images/exhibition3.jpg);
 }
-.slide_4{
-    background-image: url(/images/exhibition2.jpg);
-}
+
 
 
 .exhibition-btns {
@@ -467,7 +465,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 15px 0 0 ;
+    margin-top: 20px;
 }
 
 .prev{
@@ -508,6 +506,7 @@ header {
     letter-spacing: -3px;
     text-transform: uppercase;
     padding: 10px 0 20px;
+    color: #000;
 }
 
 .ex-btn-container {
