@@ -16,6 +16,24 @@ nav {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.3s ease;
+    color: #fff;
+    padding: 0 5%;
+    z-index: 1000;
+    height: 50px;
+    border-bottom: 1px solid #fff;
+
+}
+
+nav.sticky {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
     border-bottom: 1px solid #000;
     padding: 0 5%;
     height: 50px;
@@ -30,30 +48,52 @@ nav.active {
 
 .logo {
     position: relative;
-    border-right: 1px solid #000;
+    border-right: 1px solid #fff;
     width: 100px;
     text-decoration: none;
     height: 50px;
     /* mix-blend-mode: difference; */
 }
 
+nav.sticky .logo {
+    border-right: 1px solid #000;
+}
+
 .logo.active {
     border-right: 1px solid #fff;
 }
+
 .logo.active h6,
 .logo.active .logo-span {
     color: #fff;
 }
 
 
+
 .logo h6 {
     font-size: 30px;
     font-weight: 800;
-    color: #000;
+    color: #fff;
     /* mix-blend-mode: difference; */
 }
 
+nav.sticky .logo h6 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #000
+}
+
 .logo-span {
+    position: absolute;
+    left: 70px;
+    top: 14px;
+    transform: rotate(-90deg);
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+}
+
+nav.sticky .logo-span {
     position: absolute;
     left: 70px;
     top: 14px;
@@ -120,6 +160,20 @@ nav.active {
 }
 
 .burger {
+    --burger-height: 25px;
+    --stick-width: 35px;
+    --stick-height: 2px;
+    --stick-color: #fff;
+    --transition-duration: 0.2s;
+    
+    position: relative;
+    width: var(--stick-width);
+    height: var(--burger-height);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+nav.sticky .burger {
     --burger-height: 25px;
     --stick-width: 35px;
     --stick-height: 2px;

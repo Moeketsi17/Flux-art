@@ -15,5 +15,6 @@ button.addEventListener("click", () => {
 
 // navbar scroll
 window.addEventListener("scroll", () => {
-    nav.classList.toggle("sticky", window.screenY > 10);
+    nav.classList.toggle("sticky", window.scrollY > 10);
+    
 })
