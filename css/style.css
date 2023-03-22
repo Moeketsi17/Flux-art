@@ -252,7 +252,7 @@ header {
     padding: 0 10%;
     height: 100%;
     width: 100%;
-    background-color: #00000065;
+    background-color: #0000007e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -345,6 +345,7 @@ header {
 /* editorial section */
 .editorial-section {
     background-color: #000;
+    padding-bottom: 40px;
 }
 
 .editorial {
@@ -354,7 +355,7 @@ header {
 .editorial-container {
     display: flex;
     overflow-y: hidden;
-    margin: 0 5%;
+    padding: 0 5%;
     gap: 20px;
 }
 
@@ -405,6 +406,7 @@ header {
     font-size: 14px;
     color: #fff;
     text-decoration: none;
+    margin-left: 5%;
 }
 
 
