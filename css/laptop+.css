@@ -129,12 +129,19 @@
         height: 100vh;
     }
 
+    .header__text-continer h1 {
+        font-size: 100px;
+        font-weight: 600;
+    }
+
     
 /* artworks section */
 
     .section-title {
         font-size: 100px;
         letter-spacing: -2px;
+        color: #000;
+        font-weight: 600;
     }
     .art-container {
         display: flex;
@@ -280,15 +287,46 @@
     .editorial-container {
         display: flex;
         overflow-y: hidden;
-        margin: 0 5%;
         gap: 20px;
+        overflow-x: hidden;
+    }
+
+    .featured-cusor {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #000;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 10px 0;
+        transition: all 0.3s ease-in;
+        transform: translate(-50px, -50px);
+        pointer-events: none;
+    }
+
+    .featured-cusor p {
+        text-align: center;
+        color: #fff;
     }
 
     .article {
         width: 400px;
-        height: 500px;
+        height: 550px;
         text-decoration: none;
         position: relative;
+    }
+
+    .article:hover {
+        text-decoration: none;
+    }
+
+    .editorial-img-container {
+        width: 400px;
+        height: 350px;
+        overflow: hidden;
     }
 
     .editorail-img {
@@ -299,10 +337,16 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        transition: scale 0.3s ease-in;
     }
 
     .editorail-img1 {
         background-image: url(/images/nelson.jpg);
+        scale: 1;
+    }
+
+    .article:hover .editorail-img {
+        scale: 1.2;
     }
 
     .date {
@@ -345,14 +389,29 @@
         transition: 0.3s ease;
         margin-top: 5px;
         position: relative;
-        background-size: 100% 1px;
+        /* background-size: 100% 1px;
         background-repeat: no-repeat;
         background-position: left bottom;
-        background-image: linear-gradient(#fff, #fff);
+        background-image: linear-gradient(#fff, #fff); */
     }
 
-    .article:hover > .article-name {
-        background-size: 100% 1px;
+    .article > .article-name::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100px;
+        height: 1px;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+        transform-origin: 0 0;
+        transition: transform 0.3s;
+        transform: scaleX(0);
+        /* transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7); */
+    }
+
+    .article:hover > .date::before {
+        transform: scaleX(1);
     }
 
     .eidtorial-btn-container {
@@ -503,13 +562,15 @@
     footer {
         display: flex;
         flex-direction: row;
-        padding: 40px 0;
+        justify-content: space-between;
+        padding: 40px 5%;
         /* justify-content: center; */
     }
 
     .footer-content-container {
-        /* background-color: aqua; */
-        width: 33.3%;
+        background-color: aqua;
+        width: 300px;
+
     }
 
     .size-container {
@@ -548,7 +609,8 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
+        width: 70%;
+        background-color: lightcoral;
     }
 
     .footer-navlinks {

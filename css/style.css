@@ -359,6 +359,10 @@ header {
     gap: 20px;
 }
 
+.featured-cusor {
+    display: none;
+}
+
 .editorial-container::-webkit-scrollbar {
     display: none;
 }
@@ -380,6 +384,22 @@ header {
 }
 
 .editorail-img1 {
+    background-image: url(/images/nelson.jpg);
+}
+
+.editorail-img2 {
+    background-image: url(/images/mario-la-pergola-U6qZ22_YgoI-unsplash.jpg);
+}
+
+.editorail-img3 {
+    background-image: url(/images/muthengi-mbuvi-XLDHUGjF5oA-unsplash.jpg);
+}
+
+.editorail-img4 {
+    background-image: url(/images/nelson.jpg);
+}
+
+.editorail-img5 {
     background-image: url(/images/nelson.jpg);
 }
 
