@@ -28,13 +28,12 @@
         background-color: #fff;
     }
     
-    
     .logo {
         position: relative;
         border-right: 1.5px solid #000;
         width: 150px;
         text-decoration: none;
-        height: 60px;
+        height: 50px;
         /* mix-blend-mode: difference; */
     }
     
@@ -441,10 +440,10 @@
         background-image: url(/images/exhibition2.jpg);
     }
     .slide_3{
-        background-image: url(/images/exhibition1.jpg);
+        background-image: url(/images/exhibition3.jpg);
     }
     .slide_4{
-        background-image: url(/images/exhibition2.jpg);
+        background-image: url(/images/exhibition4.jpg);
     }
 
 
@@ -462,7 +461,7 @@
     .next{
         cursor:pointer;
         height: 50px;
-        width: 50px;
+        max-width: 50px;
         border: 1.5px solid #000;
         display: flex;
         align-items: center;
