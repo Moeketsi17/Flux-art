@@ -47,11 +47,12 @@ nav.active {
 }
 
 .logo {
+    display: flex;
     position: relative;
     border-right: 1px solid #fff;
     width: 100px;
     text-decoration: none;
-    height: 50px;
+    /* height: 50px; */
     /* mix-blend-mode: difference; */
 }
 

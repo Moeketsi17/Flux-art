@@ -21,52 +21,81 @@
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1.5px solid #000;
+        border-bottom: 1.5px solid #fff;
         padding: 0 5%;
         height: 60px;
         z-index: 1000;
-        background-color: #fff;
+        background: none;
+        color: #fff;
+    }
+
+    nav.sticky {
+        background: #fff;
     }
     
     .logo {
+        
         position: relative;
-        border-right: 1.5px solid #000;
+        border-right: 1.5px solid #fff;
         width: 150px;
         text-decoration: none;
-        height: 50px;
+        /* height: 50px; */
         /* mix-blend-mode: difference; */
+        text-decoration: none;
+    }
+
+    nav.sticky .logo {
+        height: 50px;
+        border-right: 1.5px solid #000;
     }
     
     
     .logo h6 {
         font-size: 40px;
         font-weight: 800;
-        color: #000;
+        color: #fff;
         /* mix-blend-mode: difference; */
+    }
+
+    nav.sticky .logo h6 {
+        font-size: 40px;
+        font-weight: 800;
+        color: #000;
     }
     
     .logo-span {
         position: absolute;
-        left: 93px;
-        top: 17px;
+        left: 95px;
+        top: 12px;
         transform: rotate(-90deg);
         font-weight: 400;
         font-size: 16px;
-        color: #000;
+        color: #fff;
         /* mix-blend-mode: difference; */
+    }
+
+    nav.sticky .logo-span {
+        color: #000;
+        left: 95px;
+        top: 12px;
+        transform: rotate(-90deg);
+        font-weight: 400;
+        font-size: 16px;
     }
     
     .navlinks {
-        width: 100%;
+        width: 80%;
         height: 9vh;
         display: flex;
         justify-content: flex-end;
         position: fixed;
         background-color: transparent;
         top: 0;
-        left: 0;
+        left: 20%;
         transform: translateY(0%);
         z-index: 1100;
+        color: #fff;
+        text-decoration: none;
     }
     
     
@@ -89,12 +118,22 @@
         position: relative;
     }
     
+    .navlinks a:hover {
+        text-decoration: none;
+        color: #000;
+    }
+
     .navlinks a {
         text-decoration: none;
         color: #000;
         font-size: 16px;
         font-weight: 500;
+        text-decoration: none;
         position: relative;
+    }
+
+    nav.sticky > .navlinks a {
+        color: #000;
     }
 
     .navlinks a::before {
